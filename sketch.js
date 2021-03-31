@@ -82,3 +82,10 @@ function detectCollision(lstone, lmango)
 	}
 
 }
+function keyPressed(){
+    if(keyCode === 32){
+		
+       Matter.Body.setPosition(stoneObj.body,{x:235,y:420})
+       boy.attach(stoneObj.body);
+    }
+}
